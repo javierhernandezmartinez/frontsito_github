@@ -20,11 +20,12 @@ export default class Buscador extends React.Component {
         return new ApolloClient({
             uri: 'https://api.github.com/graphql',
             cache: new InMemoryCache(),
-            headers: {Authorization: 'Bearer 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'}
+            headers: {Authorization: 'Bearer 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'}
         });
     }
 
     getApolloData = () => {
+        console.log("searching:::", this.state.inputValue)
         this.conectionApollo().query({
             variables: {
                 "query": this.state.inputValue,
@@ -100,7 +101,7 @@ export default class Buscador extends React.Component {
     }
 
     UserProfileCard = () => {
-        if (this.state.DataUsers?.length > 1) {
+        if (this.state.DataUsers?.length >= 1) {
             return (
                 <div className={"grid grid-cols-12 gap-4"}>
                     {
