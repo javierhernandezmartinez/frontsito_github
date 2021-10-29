@@ -68,3 +68,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## ----Token de autenticación Git----
+Es necesario agregar un token de autorizacion personal GitHub.
+Guia de referencia: [https://docs.github.com/es/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token](https://docs.github.com/es/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+
+### Agregue el token
+Abre el archivo "buscador.js" ubicado en src/Components.
+
+En la funcion "conectionApollo()" linea 19 reemplace el valor de la variable "TokenGit" por su nuevo token.

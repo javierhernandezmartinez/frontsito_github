@@ -17,10 +17,11 @@ export default class Buscador extends React.Component {
     }
 
     conectionApollo = () => {
+        let TokenGit = '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'
         return new ApolloClient({
             uri: 'https://api.github.com/graphql',
             cache: new InMemoryCache(),
-            headers: {Authorization: 'Bearer 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'}
+            headers: {Authorization: `Bearer ${TokenGit}`}
         });
     }
 
